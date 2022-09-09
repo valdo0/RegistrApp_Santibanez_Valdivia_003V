@@ -1,0 +1,33 @@
+.home {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+.form1{
+    border-radius: 25px;
+    border-radius: solid black ;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #1C264B;
+    -webkit-box-shadow: 14px 18px 24px -8px rgba(0,0,0,0.52);
+    -moz-box-shadow: 14px 18px 24px -8px rgba(0,0,0,0.52);
+    box-shadow: 14px 18px 24px -8px rgba(0,0,0,0.52);
+}  
+a{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    margin-top: 10%;
+}
+.boton{
+    background-color: #1C264B; 
+    width:80%; 
+    border-radius:10px;
+    margin-left: 10%;
+    color: #FFFFFF;
+    margin-top: 4%;
+    
+}
+ion-content{ --ion-background-color:#97D2EC;
+}

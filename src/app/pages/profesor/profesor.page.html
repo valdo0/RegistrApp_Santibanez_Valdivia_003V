@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="start" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="home">
+    <img style="width: 60%;border-radius:150px;" src="https://scontent-scl2-1.xx.fbcdn.net/v/t1.6435-9/50773200_1110303169172387_6682615172911071232_n.png?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_ohc=Z5Hm8CFQ0bYAX-DmTZJ&_nc_ht=scontent-scl2-1.xx&oh=00_AT_5eaoaNcwjgCBp_6Bu2NBYtqEpYhibzDYSv9j3vQeE0w&oe=633F224A" alt="imagen">
+  </div>
+  <div>
+    <h1 style="text-align:center; color:#25316D; ">RegisterApp</h1>  
+  </div>
+<ion-card color="for" class="form1">
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()" style="background-color:#25316D;"> 
+    <ion-item  color="for">
+      <ion-icon slot="start" name="person-outline" color="light"></ion-icon>
+      <ion-input type="text" color="light" placeholder="Profesor" name="nombre" [(ngModel)]="usuario.nombre" required></ion-input>
+    </ion-item>
+    <ion-item color="for">
+      <ion-icon slot="start" color="light" name="key-outline"></ion-icon>
+      <ion-input type="text" color="light" placeholder="Contraseña" name="password" [(ngModel)]="usuario.password" required></ion-input>
+    </ion-item>
+  </form>
+  
+</ion-card>
+    <a href="/recuperar-password">Recuperar Contraseña</a>  
+    <ion-button class="boton" (click)="onClick()" expand="block" fill="clear" shape="round"[routerLink]="['/inicio-profesor']">
+      Iniciar Sesión
+    </ion-button>
+    <a href="/registro-profesor">No tienes Cuenta?</a>
+
+ 
+
+</ion-content>

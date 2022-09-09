@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="start" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Registro Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+        <ion-text>
+          <h3> Asignatura</h3>
+        </ion-text>
+        <ion-item class="redondear" color="light">
+          <ion-select value="Seleccionar Sede" interface="action-sheet" placeholder="Seleccionar Asignatura">
+            <ion-select-option value="peperoni">Programación Web</ion-select-option>
+            <ion-select-option value="hawaii">Programación App</ion-select-option>
+          </ion-select>
+      </ion-item>
+      <ion-text>
+        <h3> Jornada</h3>
+      </ion-text>
+      <ion-item class="redondear" color="light">
+        <ion-select value="Seleccionar Sede" interface="action-sheet" placeholder="Seleccionar Jornada">
+          <ion-select-option value="peperoni">Diurna</ion-select-option>
+          <ion-select-option value="hawaii">Vespertina</ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-text>
+      <h3> Sección</h3>
+    </ion-text>
+    <ion-item class="redondear" color="light">
+      <ion-select value="Seleccionar Sede" interface="action-sheet" placeholder="Seleccionar Sección">
+        <ion-select-option value="peperoni">001</ion-select-option>
+        <ion-select-option value="hawaii">002</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <ion-grid class="boton-qr">
+    <ion-row fixed routerLink="/generar-qr" class="qr">
+      <ion-col size="1">
+        
+      </ion-col>
+      <ion-col size="3" class="ion-align-self-center">
+        <ion-icon name="qr-code-sharp" class="iconosFot" color="light"></ion-icon>
+      </ion-col>
+      
+      <ion-col size="8" class="ion-align-self-center">      
+        <ion-text color="light">
+        <h1>Generar QR</h1>
+      </ion-text></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
