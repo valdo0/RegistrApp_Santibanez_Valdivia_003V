@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="start" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--generar-qr-->
+
+
+<ion-content >
+<div class="pantalla">
+  <img  src="https://borealtech.com/wp-content/uploads/2018/10/codigo-qr-1024x1024-1.jpg" alt="imagen">
+</div>
+
+<div class="containerB">
+  <ion-icon id="enviarFoto" (click)="presentAlert()" class="iconosFot" name="cloud-upload"></ion-icon>
+</div>
+<ion-tabs>
+  <ion-tab-bar slot="bottom,top">
+    <ion-tab-button tab="tab1" [routerLink]="['/inicio-profesor']">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="tab2" [routerLink]="['/inicio-profesor']">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+  
+</ion-tabs>
+
+</ion-content>

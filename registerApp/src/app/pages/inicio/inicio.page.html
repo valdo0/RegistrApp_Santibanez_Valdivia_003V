@@ -1,0 +1,21 @@
+<!--inicio-->
+<ion-content>
+    <div class="home">
+      <img style="  width:200px;height:200px;border-radius:150px;" src="assets/images/duoc.png" alt="imagen">
+      </div>
+      <div>
+      <h1 style="text-align:center; color:#25316D; ">RegisterApp</h1>  
+      </div>
+    <div id="container">
+      <strong>Bienvenidos</strong> 
+      <div>
+      <ion-button class="botonHome" (click)="onClick()" expand="block" fill="clear" shape="round" [routerLink]="['/alumno']">
+        Alumnos
+      </ion-button>
+  
+      <ion-button class="botonHome" (click)="onClick()" expand="block" fill="clear" shape="round"[routerLink]="['/profesor']">
+        Profesor
+      </ion-button>
+    </div>
+    </div>
+</ion-content>

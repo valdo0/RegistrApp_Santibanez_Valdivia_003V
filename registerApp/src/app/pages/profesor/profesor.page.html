@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--profesor-->
+<ion-content >
+  <div class="caja1">
+    <div class="home">
+      <img style="width: 60%;border-radius:150px;" src="assets/images/duoc.png" alt="imagen">
+    </div>
+  <div>
+    <h1 style="text-align:center; color:#25316D; ">RegisterApp</h1>  
+  </div>
+<ion-card color="for" class="form1">
+  <form [formGroup] = "formularioLogin" style="background-color:#25316D;"> 
+    <ion-item  color="for">
+      <ion-icon slot="start" name="person-outline" color="light"></ion-icon>
+      <ion-input type="text" color="light" placeholder="Correo Profesor" formControlName="correo" required></ion-input>
+    </ion-item>
+    <ion-item color="for">
+      <ion-icon slot="start" color="light" name="key-outline"></ion-icon>
+      <ion-input type="password" color="light" placeholder="Contraseña" formControlName="password" required></ion-input>
+    </ion-item>
+  </form>
+  
+</ion-card>
+    <a href="/recuperar-password">Recuperar Contraseña</a>  
+    <ion-button  class="boton"  expand="block" fill="clear" shape="round" (click)="Ingresar()">
+      Iniciar Sesión
+    </ion-button>
+    <a href="/registro-profesor">No tienes Cuenta?</a>
+
+ 
+  </div>
+</ion-content>

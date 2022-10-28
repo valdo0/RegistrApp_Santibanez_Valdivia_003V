@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="start" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--inicio-profesor-->
+
+<ion-content>
+  <ion-text color="dark" class="ion-text-center">
+    <h2>{{name}}</h2>
+  </ion-text>
+  <ion-text color="dark" class="titulos">
+    <h3>Horario</h3>
+  </ion-text>
+
+    <ion-list class="horario">
+      <ion-item color="light">
+        <ion-label>Programación Web</ion-label>
+        <ion-label>Seccion 1</ion-label>
+        <ion-label>16:20</ion-label>
+      </ion-item>
+      <ion-item color="light">
+        <ion-label>Programación Web</ion-label>
+        <ion-label>Sección 2V</ion-label>
+        <ion-label>19:00</ion-label>
+      </ion-item>
+      <ion-item color="light">
+        <ion-label>Programación Web</ion-label>
+        <ion-label>Seccion 3V</ion-label>
+        <ion-label>20:20</ion-label>
+      </ion-item>
+    </ion-list>
+<ion-grid class="boton-qr">
+  <ion-row fixed routerLink="/registro-asistencia" class="qr">
+    <ion-col size="1">
+      
+    </ion-col>
+    <ion-col size="3" class="ion-align-self-center">
+      <ion-icon name="qr-code-sharp" class="iconosFot" color="light"></ion-icon>
+    </ion-col>
+    
+    <ion-col size="8" class="ion-align-self-center">      
+      <ion-text color="light">
+      <h1>Generar QR</h1>
+    </ion-text></ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>
