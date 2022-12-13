@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!--inicio-alumno-->
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text  class="ion-text-center" >
+
+    <strong>
+      <h1>Hola!</h1>
+      <h2>{{nombre}}</h2>
+    </strong>
+  </ion-text>
+  <div class="container">
+    <strong>
+      <h3>
+        Tu horario de hoy es:
+      </h3>
+    </strong>
+    <div class="scrolleable">
+      <div class="flex">
+        <h6>Programacion Web </h6>
+        <h6>8:00hrs-10:00hrs</h6>
+      </div>
+      <div class="flex">
+        <h6>Calidad Software </h6>
+        <h6>10:20hrs-11:20hrs</h6>
+      </div>
+      <div class="flex">
+        <h6>Machine Learning </h6>
+        <h6>12:00hrs-13:30hrs</h6>
+      </div>
+      <div class="flex">
+        <h6>Etica </h6>
+        <h6>13:40hrs-15:00hrs</h6>
+      </div>
+      <div class="flex">
+        <h6>Estadistica Descriptiva </h6>
+        <h6>15:30hrs-17:00hrs</h6>
+      </div>
+      <div class="flex">
+        <h6>Programacion de Apps </h6>
+        <h6>15:30hrs-17:00hrs</h6>
+      </div>
+      <div class="flex">
+        <h6>Programacion de Algoritmos </h6>
+        <h6>15:30hrs-17:00hrs</h6>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="footer">
+    <ion-img src="/assets/logo2.png"></ion-img>
+  </div>
+
+</ion-content>

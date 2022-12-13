@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Registrar Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h1 class="titulo">
+      Ingrese información de clase para generar el qr de asistencia
+    </h1>
+  </div>
+  <form action="">
+    <ion-item class="redondear" color="light">
+      <ion-select value="Seleccionar Jornada" interface="action-sheet" placeholder="Asignatura">
+        <ion-select-option [value]="diurna">Programación Web</ion-select-option>
+        <ion-select-option [value]="vespertina">Programacion de Aplicaciones Moviles</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="redondear" color="light">
+      <ion-select value="Seleccionar Jornada" interface="action-sheet" placeholder="Jornada">
+        <ion-select-option [value]="diurna">Diurna</ion-select-option>
+        <ion-select-option [value]="vespertina">Vespertina</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="redondear" color="light">
+      <ion-select value="Seleccionar Jornada" interface="action-sheet" placeholder="Sección">
+        <ion-select-option [value]="diurna">01</ion-select-option>
+        <ion-select-option [value]="vespertina">02</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </form>
+<ion-grid fixed>
+  <ion-row class="ion-justify-content-center">
+    <div>
+      <qrcode
+      [qrdata]="qrCodeString"
+      [width]="200"
+      [errorCorrectionLevel]="'M'">
+    </qrcode>
+
+    </div>
+  </ion-row>
+</ion-grid>
+<div class="boton-qr">
+  <ion-button (click)="generarQr()" expand="block" fill="clear" shape="round" class="boton">
+    Generar Qr
+  </ion-button>
+
+</div>
+
+  <div class="footer">
+    <ion-img src="/assets/logo2.png"></ion-img>
+  </div>
+  
+</ion-content>

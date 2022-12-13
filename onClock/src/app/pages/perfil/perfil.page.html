@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button (click)="mostrarMenu()">
+      <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  <div class="informacion">
+    <div class="perfil">
+      <h1><ion-icon name="person-circle-outline"></ion-icon></h1>
+      <strong><h2>{{nombre}}</h2></strong>
+      <h3>{{rol}}</h3>
+    </div>
+
+  </div>
+  <div class="footer">
+    <ion-img src="/assets/logo2.png"></ion-img>
+  </div>
+
+</ion-content>

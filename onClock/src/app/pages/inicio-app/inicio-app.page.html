@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="fondo">
+    <div class="container">
+      <ion-img src="assets/logo1.png"  class="imagen"></ion-img> 
+      <ion-text class="bienvenida">
+        <h1>Te da la bienvenida</h1>
+      </ion-text>
+    </div>
+    <div class="botones">
+      <ion-text>
+        <h2>Ingresar como:</h2>
+      </ion-text>
+      <ion-button class="botonHome"  expand="block" fill="clear" shape="round" [routerLink]="['/login-alumno']">
+        <h3>
+          Alumno
+        </h3>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button class="botonHome"  expand="block" fill="clear" shape="round" size="medium" [routerLink]="['/login-profesor']">
+        <h3>
+          Profesor
+        </h3>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-button>
+  
+    </div>
+
+  </div>
+
+</ion-content>

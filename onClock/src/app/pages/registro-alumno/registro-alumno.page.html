@@ -1,0 +1,52 @@
+<ion-header class="fondo">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="icon">
+    <ion-img src="/assets/registro.png" ></ion-img>
+
+  </div>
+  <div class="footer">
+    <ion-img src="/assets/logo2.png"></ion-img>
+  </div>
+<div class="titulo">
+  <ion-text  class="ion-text-center" >
+      <h1 class="texto-titulo">Ingresa tu información para comenzar</h1>
+  </ion-text>
+</div>
+<form [formGroup]="formularioRegistro" (keyup.enter)="registrarse()"> 
+  <ion-item class="redondear" color="light">
+    <ion-input type="text" placeholder="Nombre" formControlName="nombre"  required=""></ion-input>
+  </ion-item>
+  <ion-item class="redondear" color="light">
+    <ion-input type="email" placeholder="Correo" formControlName="correo" required></ion-input> 
+  </ion-item>
+  <ion-item class="redondear" color="light">
+    <ion-input type="password" placeholder="Contraseña " formControlName="password" required></ion-input>
+    </ion-item>
+  <br>
+  <ion-item class="redondear" color="light">
+    <ion-input type="password" placeholder="Confirmar Contraseña" formControlName="confirmaPass" required></ion-input>
+  </ion-item>
+  <ion-item class="redondear" color="light" >
+      <ion-select value="Seleccionar Sede" interface="action-sheet" placeholder="Sede" formControlName="sede" >
+        <ion-select-option [value]="maipu">Maipú</ion-select-option>
+        <ion-select-option [value]="plazaOeste">Plaza Oeste</ion-select-option>
+      </ion-select>
+  </ion-item>
+  <ion-item class="redondear" color="light">
+      <ion-select value="Seleccionar Jornada" interface="action-sheet" placeholder="Jornada" formControlName="jornada">
+        <ion-select-option [value]="diurna">Diurna</ion-select-option>
+        <ion-select-option [value]="vespertina">Vespertina</ion-select-option>
+      </ion-select>
+  </ion-item>
+  <ion-button class="boton" (click)="registrarse()" expand="block" fill="clear" shape="round">
+    <h1 class="texto-boton">Registrar</h1>
+  </ion-button>
+  
+</form>
+
+</ion-content>

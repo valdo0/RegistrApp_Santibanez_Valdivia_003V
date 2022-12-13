@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--alumno-->
+<ion-content>
+  <div class="imagen">
+    <ion-img src="assets/OnClock-DisenoLOGO.png"></ion-img>
+
+  </div>
+  <div class="caja1">
+
+    <form [formGroup] = "formularioLogin"> 
+      <ion-item  class="for"  >
+        <ion-icon slot="start" name="person-outline" ></ion-icon>
+        <ion-input type="text"  placeholder="Correo Profesor" formControlName="correo" required></ion-input>
+      </ion-item>
+      <ion-item class="for" >
+        <ion-icon slot="start"  name="key-outline"></ion-icon>
+        <ion-input type="password"  placeholder="Contraseña" formControlName="password" required></ion-input>
+      </ion-item>
+    </form>
+    
+
+      <a routerLink="/recuperar-password">Recuperar Contraseña</a>  
+      <ion-button id="formulario" class="boton"  expand="block" fill="clear" shape="round" (click)="ingresar()">
+        Iniciar Sesión
+      </ion-button>
+      <a routerLink="/registro-profesor">No tienes Cuenta?</a>
+  
+   
+
+  </div>
+
+</ion-content>
